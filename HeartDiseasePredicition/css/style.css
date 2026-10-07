@@ -1,0 +1,509 @@
+/* ================================
+   Google Font
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ================================
+   Global Styles
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ================================
+   Navbar
+================================ */
+
+.navbar{
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.navbar-brand i{
+    margin-right:8px;
+}
+
+/* ================================
+   Hero Section
+================================ */
+
+.hero{
+    padding:70px 0;
+    text-align:center;
+    background:linear-gradient(135deg,#ffeaea,#ffffff);
+}
+
+.hero h1{
+    font-size:45px;
+    font-weight:700;
+    color:#dc3545;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:18px;
+    color:#555;
+}
+
+/* ================================
+   Card
+================================ */
+
+.card{
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.card-body{
+    padding:35px;
+}
+
+/* ================================
+   Heading
+================================ */
+
+h3{
+    font-weight:700;
+}
+
+/* ================================
+   Labels
+================================ */
+
+.form-label{
+    font-weight:600;
+    color:#444;
+}
+
+/* ================================
+   Inputs
+================================ */
+
+.form-control,
+.form-select{
+
+    border-radius:10px;
+    padding:12px;
+    border:1px solid #ccc;
+    transition:.3s;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#dc3545;
+    box-shadow:0 0 8px rgba(220,53,69,.25);
+
+}
+
+/* ================================
+   Placeholder
+================================ */
+
+.form-control::placeholder{
+
+    color:#999;
+
+}
+
+/* ================================
+   Buttons
+================================ */
+
+.btn{
+
+    border-radius:10px;
+    padding:12px 28px;
+    font-size:17px;
+    transition:.3s;
+
+}
+
+.btn-danger{
+
+    background:#dc3545;
+    border:none;
+
+}
+
+.btn-danger:hover{
+
+    background:#bb2d3b;
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ================================
+   Icons
+================================ */
+
+i{
+
+    margin-right:6px;
+
+}
+
+/* ================================
+   Form Grid
+================================ */
+
+.row{
+
+    margin-top:10px;
+
+}
+
+.col-md-4{
+
+    margin-bottom:15px;
+
+}
+
+/* ================================
+   Loading
+================================ */
+
+#loading{
+
+    padding:25px;
+
+}
+
+.spinner-border{
+
+    width:4rem;
+    height:4rem;
+
+}
+
+/* ================================
+   Smooth Animation
+================================ */
+
+.card,
+.hero,
+button{
+
+    animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ================================
+   Hover Effect
+================================ */
+
+.form-control:hover,
+.form-select:hover{
+
+    border-color:#dc3545;
+
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+    transition:.3s;
+
+}
+/* =====================================
+   Result Card
+===================================== */
+
+#resultCard{
+    display:none;
+    margin-top:40px;
+    border-radius:15px;
+    animation:fadeInUp .8s ease;
+}
+
+#predictionText{
+    font-size:28px;
+    font-weight:700;
+    margin-top:15px;
+}
+
+#confidenceText{
+    font-size:18px;
+    color:#555;
+    margin-top:10px;
+}
+
+/* =====================================
+   Prediction Colors
+===================================== */
+
+.success{
+    color:#198754;
+}
+
+.danger{
+    color:#dc3545;
+}
+
+/* =====================================
+   Advice Box
+===================================== */
+
+#adviceBox{
+    border-radius:10px;
+    font-size:16px;
+    line-height:1.8;
+}
+
+/* =====================================
+   Footer
+===================================== */
+
+footer{
+    margin-top:60px;
+    background:#212529;
+    color:#fff;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* =====================================
+   Card Shadow
+===================================== */
+
+.shadow-lg{
+    box-shadow:0 15px 35px rgba(0,0,0,.15)!important;
+}
+
+/* =====================================
+   Button Animation
+===================================== */
+
+.btn:active{
+    transform:scale(.97);
+}
+
+/* =====================================
+   Fade Up Animation
+===================================== */
+
+@keyframes fadeInUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media(max-width:992px){
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    padding:50px 20px;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.card-body{
+
+    padding:25px;
+
+}
+
+.btn{
+
+    width:100%;
+    margin-bottom:12px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.navbar-brand{
+
+    font-size:18px;
+
+}
+
+.hero h1{
+
+    font-size:26px;
+
+}
+
+.form-control,
+.form-select{
+
+    padding:10px;
+
+}
+
+}
+
+/* =====================================
+   Scrollbar
+===================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#dc3545;
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#bb2d3b;
+
+}
+
+/* =====================================
+   Utility Classes
+===================================== */
+
+.text-danger{
+    color:#dc3545!important;
+}
+
+.bg-danger{
+    background:#dc3545!important;
+}
+
+.rounded{
+    border-radius:12px!important;
+}
+
+.mt-4{
+    margin-top:1.5rem!important;
+}
+
+.mb-4{
+    margin-bottom:1.5rem!important;
+}
+
+.text-center{
+    text-align:center!important;
+}
+
+.hidden{
+    display:none;
+}
+
+.show{
+    display:block;
+}
+
+/* =====================================
+   Input Validation
+===================================== */
+
+input:invalid,
+select:invalid{
+
+    border-color:#dc3545;
+
+}
+
+input:valid,
+select:valid{
+
+    border-color:#198754;
+
+}
+
+/* =====================================
+   Smooth Scrolling
+===================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* =====================================
+   End of CSS
+===================================== */
